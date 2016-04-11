@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E9D52821CBC278D00A994EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D52811CBC278D00A994EA /* MapKit.framework */; };
 		BAFCCB211CB5A5B900CB5902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFCCB201CB5A5B900CB5902 /* AppDelegate.swift */; };
 		BAFCCB261CB5A5B900CB5902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFCCB241CB5A5B900CB5902 /* Main.storyboard */; };
 		BAFCCB281CB5A5B900CB5902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFCCB271CB5A5B900CB5902 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E9D52811CBC278D00A994EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BAFCCB1D1CB5A5B900CB5902 /* World Trotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Trotter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFCCB201CB5A5B900CB5902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAFCCB251CB5A5B900CB5902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9D52821CBC278D00A994EA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		BAFCCB141CB5A5B900CB5902 = {
 			isa = PBXGroup;
 			children = (
+				1E9D52811CBC278D00A994EA /* MapKit.framework */,
 				BAFCCB321CB671E000CB5902 /* ConversionViewController.swift */,
 				BAFCCB1F1CB5A5B900CB5902 /* World Trotter */,
 				BAFCCB1E1CB5A5B900CB5902 /* Products */,
@@ -286,6 +290,7 @@
 				BAFCCB311CB5A5B900CB5902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
