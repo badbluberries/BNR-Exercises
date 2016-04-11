@@ -13,6 +13,24 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celciusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
+    override func viewWillAppear(animated: Bool) {
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(.Hour, fromDate: date)
+        let darkTime = 17
+        if components.hour > darkTime {
+            self.view.backgroundColor = [#Color(colorLiteralRed: 0.4274134337902069, green: 0.2680841088294983, blue: 0.05884373188018799, alpha: 1)#]
+        }
+        
+    }
+    
+    override func viewDidLoad() {
+        //always call the super implementation of viewdidload
+        super.viewDidLoad()
+        
+        print("ConversionViewController loaded its view")
+    }
+    
     var fahrenheitValue: Double? {
         didSet {
             updateCelciusLabel()
@@ -73,6 +91,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         
         return false
     }
+    
+
     
    //comment from imac
    //also new comment from my MacBook
