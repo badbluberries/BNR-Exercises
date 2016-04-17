@@ -93,11 +93,11 @@
         <!--Map-->
         <scene sceneID="lOZ-nC-ffD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ffh-gm-6mL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="iZu-AG-d2Z" customClass="MapViewController" customModule="World_Trotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="n2S-YN-bTC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffh-gm-6mL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1805.5" y="810.5"/>
         </scene>

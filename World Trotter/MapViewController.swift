@@ -12,6 +12,7 @@ import MapKit
 class MapViewController: UIViewController {
     
     var mapView: MKMapView!
+    var locationManager = CLLocationManager()
     
     override func loadView() {
         mapView = MKMapView()
@@ -28,16 +29,19 @@ class MapViewController: UIViewController {
     }
     
     func generateButton() -> () {
-        let locationButton = UIButton(type: .InfoLight)
+        let locationButton = UIButton(type: .Custom)
+        let compassIcon = UIImage(named: "compass-point-7")
+        locationButton.setBackgroundImage(compassIcon, forState: .Normal)
         locationButton.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+        locationButton.addTarget(self, action: "locationButtonPressed:", forControlEvents: .TouchUpInside)
         locationButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(locationButton)
-        
-        let bottomConstraint = locationButton.bottomAnchor.constraintEqualToAnchor(bottomLayoutGuide.topAnchor, constant: 8)
+        print(view.superview)
         let margins = view.layoutMarginsGuide
-        let leadingcontstraint = locationButton.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor)
+        let bottomConstraint = locationButton.bottomAnchor.constraintEqualToAnchor(bottomLayoutGuide.topAnchor, constant: -8)
+        let trailingContraint = locationButton.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor)
         bottomConstraint.active = true
-        leadingcontstraint.active = true
+        trailingContraint.active = true
         
     }
     func generateSegmentController() -> () {
@@ -69,5 +73,9 @@ class MapViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    func locationButtonPressed(button: UIButton) {
+        print("User would like to know their location please")
     }
 }
