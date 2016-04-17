@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1E9D52821CBC278D00A994EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D52811CBC278D00A994EA /* MapKit.framework */; };
 		1E9D52841CBC2A8300A994EA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D52831CBC2A8300A994EA /* MapViewController.swift */; };
-		1E9D52871CBC2DFF00A994EA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D52861CBC2DFF00A994EA /* DateExtension.swift */; };
+		BA804A871CBD789900D81CC0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA804A861CBD789900D81CC0 /* WebViewController.swift */; };
+		BA804A891CBD78C600D81CC0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA804A881CBD78C600D81CC0 /* WebKit.framework */; };
 		BAFCCB211CB5A5B900CB5902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFCCB201CB5A5B900CB5902 /* AppDelegate.swift */; };
 		BAFCCB261CB5A5B900CB5902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFCCB241CB5A5B900CB5902 /* Main.storyboard */; };
 		BAFCCB281CB5A5B900CB5902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFCCB271CB5A5B900CB5902 /* Assets.xcassets */; };
@@ -20,7 +21,8 @@
 /* Begin PBXFileReference section */
 		1E9D52811CBC278D00A994EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1E9D52831CBC2A8300A994EA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		1E9D52861CBC2DFF00A994EA /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		BA804A861CBD789900D81CC0 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BA804A881CBD78C600D81CC0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		BAFCCB1D1CB5A5B900CB5902 /* World Trotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Trotter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFCCB201CB5A5B900CB5902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAFCCB251CB5A5B900CB5902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA804A891CBD78C600D81CC0 /* WebKit.framework in Frameworks */,
 				1E9D52821CBC278D00A994EA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,8 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				BAFCCB321CB671E000CB5902 /* ConversionViewController.swift */,
-				1E9D52861CBC2DFF00A994EA /* DateExtension.swift */,
 				1E9D52831CBC2A8300A994EA /* MapViewController.swift */,
+				BA804A861CBD789900D81CC0 /* WebViewController.swift */,
 			);
 			name = "VC's";
 			sourceTree = "<group>";
@@ -55,6 +58,7 @@
 		BAFCCB141CB5A5B900CB5902 = {
 			isa = PBXGroup;
 			children = (
+				BA804A881CBD78C600D81CC0 /* WebKit.framework */,
 				1E9D52811CBC278D00A994EA /* MapKit.framework */,
 				BAFCCB1F1CB5A5B900CB5902 /* World Trotter */,
 				BAFCCB1E1CB5A5B900CB5902 /* Products */,
@@ -154,9 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAFCCB331CB671E000CB5902 /* ConversionViewController.swift in Sources */,
-				1E9D52871CBC2DFF00A994EA /* DateExtension.swift in Sources */,
 				1E9D52841CBC2A8300A994EA /* MapViewController.swift in Sources */,
 				BAFCCB211CB5A5B900CB5902 /* AppDelegate.swift in Sources */,
+				BA804A871CBD789900D81CC0 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
